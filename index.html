@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Oyun Sitem</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head> 
-    <head>
-        <title>Oyun Sitesi</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head>       
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oyun Sitesi</title>
+    <title>Oyun Sitem</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
 <body>
-
     <header class="hero">
         <div class="hero-content">
             <h1>Oyun Dünyasına Hoş Geldiniz!</h1>
@@ -32,20 +20,48 @@
             <img src="images/oyun1.jpg" alt="Valorant">
             <p>Valorant</p>
         </div>
-        <div class="option"><img src="images/oyun2.jpg" alt="Oyun 2"><p>Oyun 2</p></div>
-        <div class="option"><img src="images/oyun3.jpg" alt="Oyun 3"><p>Oyun 3</p></div>
-        <div class="option"><img src="images/oyun4.jpg" alt="Oyun 4"><p>Oyun 4</p></div>
-        <div class="option"><img src="images/oyun5.jpg" alt="Oyun 5"><p>Oyun 5</p></div>
-        <div class="option"><img src="images/oyun6.jpg" alt="Oyun 6"><p>Oyun 6</p></div>
+        <div class="option">
+            <img src="images/oyun2.jpg" alt="Oyun 2">
+            <p>Oyun 2</p>
+        </div>
+        <div class="option">
+            <img src="images/oyun3.jpg" alt="Oyun 3">
+            <p>Oyun 3</p>
+        </div>
+        <div class="option">
+            <img src="images/oyun4.jpg" alt="Oyun 4">
+            <p>Oyun 4</p>
+        </div>
+        <div class="option">
+            <img src="images/oyun5.jpg" alt="Oyun 5">
+            <p>Oyun 5</p>
+        </div>
+        <div class="option">
+            <img src="images/oyun6.jpg" alt="Oyun 6">
+            <p>Oyun 6</p>
+        </div>
     </section>
 
-    <div id="valorant-details" class="details" style="display: none;">
+    <div id="valorant-details" class="details">
         <h2>Valorant - Detaylı Bilgi</h2>
         <p>Riot Games tarafından geliştirilen taktiksel FPS oyunu.</p>
         <button id="details-button">Detayları Göster</button>
+
+        <div class="comment-section">
+            <h3>Yorumlar ve Değerlendirmeler</h3>
+            <div class="comment-form">
+                <input type="text" id="username" placeholder="Adınızı girin" required>
+                <textarea id="comment" placeholder="Yorumunuzu buraya yazın..." required></textarea>
+                <input type="number" id="rating" min="1" max="10" placeholder="Puanınızı (1-10 arası) girin" required>
+                <button id="submit-comment">Yorum Gönder</button>
+            </div>
+
+            <div id="comments-list">
+                <!-- Dinamik yorumlar buraya eklenecek -->
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
-<link rel="icon" type="image/x-icon" href="favicon.ico">    
-
+</html>
