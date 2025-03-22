@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oyun Sitem</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head> 
+    <head>
+        <title>Oyun Sitesi</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>       
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oyun Sitesi</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <body>
 
     <header class="hero">
@@ -16,7 +28,10 @@
     </header>
 
     <section class="options">
-        <div class="option"><img src="images/oyun1.jpg" alt="Oyun 1"><p>Oyun 1</p></div>
+        <div class="option" id="valorant-option">
+            <img src="images/oyun1.jpg" alt="Valorant">
+            <p>Valorant</p>
+        </div>
         <div class="option"><img src="images/oyun2.jpg" alt="Oyun 2"><p>Oyun 2</p></div>
         <div class="option"><img src="images/oyun3.jpg" alt="Oyun 3"><p>Oyun 3</p></div>
         <div class="option"><img src="images/oyun4.jpg" alt="Oyun 4"><p>Oyun 4</p></div>
@@ -24,5 +39,13 @@
         <div class="option"><img src="images/oyun6.jpg" alt="Oyun 6"><p>Oyun 6</p></div>
     </section>
 
+    <div id="valorant-details" class="details" style="display: none;">
+        <h2>Valorant - Detaylı Bilgi</h2>
+        <p>Riot Games tarafından geliştirilen taktiksel FPS oyunu.</p>
+        <button id="details-button">Detayları Göster</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-</html>
+<link rel="icon" type="image/x-icon" href="favicon.ico">    
+
