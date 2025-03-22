@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -33,7 +33,7 @@ body {
 
 .option {
     width: 200px;
-    cursor: pointer; /* 🔥 El işareti için */
+    cursor: pointer;
 }
 
 .option img {
@@ -48,9 +48,6 @@ body {
     transform: scale(1.1);
 }
 
-.hidden {
-    display: none;
-}
 .details {
     display: none;
     background-color: #8b0000;
@@ -74,4 +71,88 @@ button {
 
 button:hover {
     background-color: darkred;
+}
+
+/* Yorum ve Değerlendirme Bölümü */
+.comment-section {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.comment-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+textarea, input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    border: 1px solid #444;
+    margin-bottom: 10px;
+}
+
+button#submit-comment {
+    background-color: #008CBA;
+}
+
+button#submit-comment:hover {
+    background-color: #005f73;
+}
+
+#comments-list {
+    margin-top: 20px;
+}
+
+.comment {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.comment strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment .response {
+    margin-top: 10px;
+    background-color: #555;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.comment button {
+    background-color: #28a745;
+    margin-top: 5px;
+}
+
+.comment button:hover {
+    background-color: #218838;
+}
+button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.response-info {
+    font-size: 0.8em;
+    color: gray;
+    margin-top: 10px;
 }
